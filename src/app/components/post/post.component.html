@@ -1,0 +1,10 @@
+<div class="container">     
+     <div class="post" *ngFor="let post of posts">
+          <div class="image">
+               <img src={{post.image}} >
+          </div>
+          <h2 class="title"><a class="a-title" [routerLink]="['/detail', post.id]">{{post.title}}</a></h2>
+          <div class="line"></div>
+          <p class="text-post">{{post.description.substring(0,50)}}...</p>
+     </div>
+</div>

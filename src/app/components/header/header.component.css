@@ -1,0 +1,32 @@
+.nav, .nav-ul{
+     width: 100%;
+     min-height: 50px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-items: center;
+     background-color: #111111;
+}
+.logo{
+     margin-right: 20px;
+}
+.logo-a{
+     font-size: 1.5em;
+     font-weight: 700;
+     text-decoration: none;
+     color: #ffbf00;
+}
+.nav-ul-li{
+     list-style-type: none;
+     margin: 10px;
+}
+.nav-ul-li:hover{
+     border-bottom: solid 2.5px #ffbf00;
+}
+.nav-ul-li>a{
+     text-decoration: none;
+     text-transform: uppercase;
+     color: white;
+     font-size: .85em;
+     font-family: sans-serif;
+}

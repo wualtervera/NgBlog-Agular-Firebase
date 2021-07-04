@@ -1,0 +1,10 @@
+<div class="container" *ngFor="let post of posts">     
+     <div class="post" *ngIf="post.id === idPost">
+          <div class="image">
+               <img src={{post.image}} >
+          </div>
+          <h2 class="title">{{post.title}}</h2>
+          <div class="line"></div>
+          <p class="text-post">{{post.description}}</p>          
+     </div>
+</div>

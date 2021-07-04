@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "post-angular-5caac": {
+      "hosting": {
+        "ngblog": [
+          "post-angular-5caac"
+        ]
+      }
+    }
+  }
+}

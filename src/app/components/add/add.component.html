@@ -1,0 +1,20 @@
+<div class="container">
+     <div class="addpost">
+          <h2>Agregar nuevo post</h2>
+          <form>  
+               <label for="title">Titulo:</label>
+               <input type="text" required id="title" [(ngModel)]="title"  name="title">
+     
+               <label for="title">Descripcion:</label>
+               <input type="text" required id="description" [(ngModel)]="description"  name="description">
+     
+               <label for="image">Imagen:</label>
+               <input type="file" id="image" (change)="uploadImage($event)">
+     
+               <input type="hidden" required #imageUri id="url" [value]="downloadURL  | async" [ngModel]="image" name="image">
+     
+               <input type="submit" class="btn"   value="Guardar" (click) = "agregarPost()">         
+               <div class="error">{{error}}</div>
+          </form>
+     </div>
+</div>
